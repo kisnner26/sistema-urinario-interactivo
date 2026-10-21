@@ -1,0 +1,14 @@
+{
+  "name": "sistema-urinario-interactivo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node --check js/main.js && node --check js/simulation.js && node --check js/ui.js"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0"
+  }
+}

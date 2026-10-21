@@ -1,0 +1,59 @@
+.organ-hotspot{
+  width:14px;
+  height:14px;
+  padding:0;
+  border:2px solid var(--white);
+  background:var(--red);
+  box-shadow:0 0 0 1px var(--red);
+}
+.organ-hotspot span{left:19px;top:-2px}
+.organ-hotspot.kidney-left{left:33%;top:28%}
+.organ-hotspot.bladder{left:50%;top:70%}
+.organ-hotspot.prostate{left:50%;top:81%}
+.organ-detail{
+  left:2%;
+  bottom:2%;
+  width:205px;
+  padding:8px 10px;
+  background:rgba(255,255,255,.94);
+  box-shadow:none;
+}
+@media(max-width:760px){.organ-detail{width:180px}}
+.nephron-frame{
+  fill:rgba(255,255,255,.97);
+  stroke:#b9aba8;
+  stroke-width:2;
+}
+.nephron-connector{
+  fill:none;
+  stroke:var(--red);
+  stroke-width:2;
+  stroke-dasharray:7 6;
+}
+.nephron-origin{
+  fill:rgba(166,25,46,.05);
+  stroke:var(--red);
+  stroke-width:3;
+}
+.nephron-image{filter:drop-shadow(0 5px 7px rgba(71,38,33,.18))}
+#nephron-inset .nephron-title{
+  fill:var(--red);
+  font:700 13px ui-monospace,SFMono-Regular,monospace;
+}
+#nephron-inset .nephron-key text{
+  fill:#635957;
+  font:600 11px ui-monospace,SFMono-Regular,monospace;
+}
+.nephron-key circle{fill:var(--urine)}
+.view-tools{left:300px;right:auto}
+.nephron-frame{display:none}
+.nephron-origin{fill:none;opacity:.55}
+.kidney-glow{opacity:0}
+.organ-hotspot{opacity:0;transition:opacity var(--fast)}
+.anatomy-stage:hover .organ-hotspot{opacity:.28}
+.organ-hotspot:hover,.organ-hotspot:focus-visible{opacity:1}
+.organ-detail{background:transparent}
+.testes-context{display:none}
+@media(min-width:1181px){
+  .workspace{grid-template-columns:260px minmax(560px,1fr) 290px}
+}
